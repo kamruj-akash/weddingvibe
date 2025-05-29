@@ -1,0 +1,234 @@
+:root {
+    --primary-bg-color: #1a1a1a;
+    /* Dark background inspired by Figma */
+    --secondary-bg-color: #2a2a2a;
+    --text-color: #f0f0f0;
+    --accent-color: #ff6f61;
+    /* Vibrant accent color */
+    --light-grey: #b0b0b0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--primary-bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* Push footer to bottom */
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    overflow-x: hidden;
+    /* Prevent horizontal scroll */
+}
+
+.container {
+    background-color: var(--secondary-bg-color);
+    padding: 40px 60px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    max-width: 900px;
+    width: 90%;
+    margin: 50px auto;
+    /* Center the container with margin */
+    animation: fadeIn 1.5s ease-out;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    /* subtle border */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.logo {
+    width: 150px;
+    /* লোগোর সাইজ */
+    height: auto;
+    margin-bottom: 25px;
+    filter: drop-shadow(0 0 8px rgba(255, 111, 97, 0.5));
+    /* লোগোতে অ্যাকসেন্ট রঙের শ্যাডো */
+}
+
+h1 {
+    font-size: 3.5em;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px rgba(255, 111, 97, 0.4);
+}
+
+h2 {
+    font-size: 2em;
+    color: var(--light-grey);
+    margin-top: 5px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 1.2em;
+    line-height: 1.8;
+    color: var(--light-grey);
+    margin-bottom: 40px;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.countdown div {
+    background-color: var(--accent-color);
+    color: var(--primary-bg-color);
+    /* Text color for countdown */
+    padding: 20px 25px;
+    border-radius: 8px;
+    font-size: 2.8em;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    min-width: 100px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.countdown div:hover {
+    transform: translateY(-5px);
+}
+
+.countdown div span {
+    display: block;
+    font-size: 0.5em;
+    font-weight: normal;
+    margin-top: 5px;
+    color: rgba(255, 255, 255, 0.9);
+    /* Slightly lighter text for labels */
+}
+
+.social-icons {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.social-icons a {
+    color: var(--accent-color);
+    font-size: 3.5em;
+    transition: transform 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #ff8c80;
+    /* Lighter shade on hover */
+    transform: translateY(-8px) scale(1.1);
+}
+
+.footer {
+    margin-top: auto;
+    /* Push footer to bottom */
+    width: 100%;
+    background-color: var(--primary-bg-color);
+    color: var(--light-grey);
+    padding: 20px 0;
+    font-size: 0.9em;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.footer p {
+    margin: 0;
+    color: var(--light-grey);
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 30px 40px;
+    }
+
+    .logo {
+        width: 120px;
+    }
+
+    h1 {
+        font-size: 2.8em;
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    p {
+        font-size: 1em;
+    }
+
+    .countdown {
+        gap: 15px;
+    }
+
+    .countdown div {
+        font-size: 2.2em;
+        padding: 15px 20px;
+        min-width: 80px;
+    }
+
+    .social-icons a {
+        font-size: 3em;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px 25px;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+
+    p {
+        font-size: 0.9em;
+    }
+
+    .countdown {
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .countdown div {
+        font-size: 1.8em;
+        padding: 10px 15px;
+        min-width: 65px;
+    }
+
+    .social-icons {
+        gap: 20px;
+    }
+
+    .social-icons a {
+        font-size: 2.5em;
+    }
+}
