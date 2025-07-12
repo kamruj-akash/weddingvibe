@@ -72,5 +72,4 @@ Developed by Kamruj Akash
 
 Email: source.akash@gmail.com
 
-<div align="center"> <img src="https://cdn-icons-png.flaticon.com/512/3176/3176293.png" width="50" /> <br/> <i>“Every love story is beautiful, but yours should be unique.”</i> <br/><br/> <img src="https://img.shields.io/badge/Made%20with%20love-%E2%9D%A4%EF%B8%8F-pink?style=flat-square" /> </div> ```
-Copy-paste kore use korle perfect vabe show korbe!
+<div align="center"> <img src="https://cdn-icons-png.flaticon.com/512/3176/3176293.png" width="50" /> <br/> <i>“Every love story is beautiful, but yours should be unique.”</i> <br/><br/> <img src="https://img.shields.io/badge/Made%20with%20love-%E2%9D%A4%EF%B8%8F-pink?style=flat-square" /> </div> 
